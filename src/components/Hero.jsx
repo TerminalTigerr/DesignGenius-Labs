@@ -5,11 +5,11 @@ class Hero extends Component {
   render() {
     return (
       <section id='home' 
-				className='flex flex-col sm:px-5 mt-5 sm:mt-12'>
+				className='flex flex-col sm:px-16 mt-5 sm:mt-12 px-6'>
           <div 
 						className='flex flex-col justify-center items-start'>
 						<h1 
-							className='text-white text-5xl font-medium font-poppins leading-tight sm:text-7xl xl:text-8xl'>
+							className='text-white text-5xl font-medium font-poppins sm:leading-tight sm:text-7xl xl:text-8xl'>
 							One of the most important <br className='sm:block hidden'/>
 							pieces of the great product <br className='sm:block hidden'/>
 							experience is you.
@@ -19,7 +19,7 @@ class Hero extends Component {
 						</p>
 					</div>
 
-					<div className=' sm:mt-40 mt-20'>
+					<div className=' sm:mt-40 mt-20 sm:mb-40 mb-20'>
 						<video id='hero' autoPlay loop className=' rounded-3xl'>
 							<source src={hero_video}>
 							</source>
