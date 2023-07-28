@@ -17,9 +17,9 @@ class Navbar extends Component {
     const toggleIcon = this.state.toggle ? close : menu
     return (
       <nav 
-        className='relative flex justify-between items-end px-4 py-6'>
+        className='relative flex justify-between items-center mt-5'>
         <div 
-          className='relative flex justify-center items-center space-x-2' >
+          className='relative flex justify-center items-center space-x-4' >
           <img src={logo} className='w-full h-full'/>
           <span 
             className='flex justify-center top-0 left-0 items-center text-white font-poppins font-bold text-lg
@@ -29,7 +29,7 @@ class Navbar extends Component {
         </div>
 
         <div className='justify-end items-center w-[70%] hidden md:flex'>
-          <ul className='flex space-x-5 mr-8 list-none justify-start items-center'>
+          <ul className='flex list-none justify-start items-center mr-10 space-x-8'>
             {navLinks.map((link) => (
               <li key={link.id}
                 className='font-poppins text-base text-white font-semibold'>
