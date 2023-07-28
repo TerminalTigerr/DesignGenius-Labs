@@ -1,59 +1,71 @@
 import React, { Component } from 'react';
-import {logo} from '../assets'
+import {close, logo, menu} from '../assets'
 import { navLinks } from '../helpers/static-texts';
 import Button from './button';
 
 class Navbar extends Component {
   state = {
-    isHovered: false,
+    toggle: false
   }
-
-  handleMouseEnter = () => {
-    this.setState({isHovered: true})
-  }
-  handleMoseLeave = () => {
-    this.setState({isHovered: false})
-  }
+  handleMenuToggle = () => {
+    this.setState((prev) => ({
+      toggle: !prev.toggle
+    }))
+  } 
+ 
   render() {
-    const {hoverText} = this.state
+    const toggleIcon = this.state.toggle ? close : menu
     return (
       <nav 
-        className='flex justify-between items-center px-4 py-6'
-      >
+        className='relative flex justify-between items-end px-4 py-6'>
         <div 
-          className='logo-container relative flex space-x-2 justify-center items-center'>
-				  <img 
-            src={logo} 
-            alt="designGeniusLabs" 
-            className=' w-full h-full cursor-pointer z-10'/
-          >
+          className='relative flex justify-center items-center space-x-2' >
+          <img src={logo} className='w-full h-full'/>
           <span 
-            className='hidden text-white text-base font-bold w-full h-full transition-all ease-in-out duration-300'>
-            DesignGenius <br /> Labs
+            className='flex justify-center top-0 left-0 items-center text-white font-poppins font-bold text-lg
+            h-full w-full opacity-0 hover:opacity-100 transition-opacity duration-700 ease-in-out cursor-pointer'>
+            DesignGenius<br /> Labs
           </span>
         </div>
 
-        {/**============ Nav Menu ==================*/}
-        <div 
-          className={`flex justify-end items-center w-[70%]`}>
-          <ul 
-            className='flex list-none space-x-10 mr-10 justify-between items-start'>
+        <div className='justify-end items-center w-[70%] hidden md:flex'>
+          <ul className='flex space-x-5 mr-8 list-none justify-start items-center'>
             {navLinks.map((link) => (
-              <li 
-                key={link.id}
-                className='font-poppins font-semibold text-white text-base hover:text-gray-400'>
+              <li key={link.id}
+                className='font-poppins text-base text-white font-semibold'>
                 <a href={`#${link.id}`}>{link.title}</a>
               </li>
             ))}
           </ul>
-
-          <Button 
-            hoverText={hoverText}
-            hoverIn={this.handleMouseEnter}
-            hoverOut={this.handleMoseLeave}
-          />
+          <Button />
         </div>
-			</nav>
+        
+        {/**============= Hamburger Menu ========= */}
+        <div className='md:hidden'>
+          <img 
+            src={toggleIcon} alt="hamburger menu" 
+            className='w-[35px] h-[35px] object-contain cursor-pointer z-10'
+            onClick={this.handleMenuToggle}
+          />
+
+          <div 
+            className={`p-10 bg-white absolute right-0 left-0 justify-center flex-col 
+            items-center space-y-10 ${this.state.toggle ? 'flex' : 'hidden'}`}>
+            <ul className='flex flex-col justify-center items-center space-y-10'>
+              {navLinks.map((link) => (
+                <li key={link.id}
+                  className='font-poppins text-gray-800 font-medium text-3xl'>
+                  <a href={`#${link.id}`}>{link.title}</a>
+                </li>
+              ))}
+            </ul>
+            <a href='#' className='bg-blue-600 px-8 py-4 rounded-full text-white
+              font-poppins text-base font-medium'>
+              start a project?
+            </a>
+          </div>
+        </div>
+      </nav>
     );
   }
 }

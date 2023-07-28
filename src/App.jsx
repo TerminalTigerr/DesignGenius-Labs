@@ -5,7 +5,7 @@ class App extends Component {
   render() {
     return (
       <div className='bg-primary overflow-hidden w-full'>
-        <div className='flex p-6 justify-center items-center '>
+        <div className='flex p-8 justify-center items-center '>
           <div className='w-full'>
             <Navbar />
           </div>
