@@ -4,7 +4,3 @@
 @tailwind components;
 @tailwind utilities;
 
-
-.logo-container:hover .words {
-    left: 0
-}

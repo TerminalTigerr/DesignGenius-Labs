@@ -1,16 +1,22 @@
 import React, { Component } from 'react';
-import {Navbar} from './components';
+import {Navbar, Hero} from './components';
 
 class App extends Component {
   render() {
     return (
-      <header className= 'bg-primary overflow-hidden w-full'>
-        <div className='flex justify-center items-center '>
-          <div className='w-full py-6 px-4'>
+      <div className='bg-primary overflow-hidden w-full'>
+        <div className='flex p-6 justify-center items-center '>
+          <div className='w-full'>
             <Navbar />
           </div>
         </div>
-      </header>
+
+        <div className='bg-primary justify-center items-center'>
+          <div className='w-full py-10'>
+            <Hero />
+          </div>
+        </div>
+      </div>
     );
   }
 }
