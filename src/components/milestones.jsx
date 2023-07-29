@@ -5,7 +5,7 @@ class Milestones extends Component {
   render() {
     return (
       <section id='milestone' className='relative bg-[#F5F7FC] rounded-b-2xl'>
-				<div className='w-full flex flex-col px-12 py-16 sm:p-32 justify-center items-start'>
+				<div className='w-full flex flex-col px-12 py-16 sm:p-32 justify-center items-start  bg-[#F5F7FC] rounded-b-2xl'>
 					<div className='flex flex-col justify-center items-start space-y-5' >
 						<h4 className=' text-sm uppercase text-gray-800 font-poppins font-medium tracking-[7px]'>
 							Milstones
@@ -26,7 +26,7 @@ class Milestones extends Component {
 								<p className='font-semibold font-poppins text-lg text-gray-800'>
 									{milestone.title}
 								</p>
-								<p className='w-[250px] font-poppins text-base text-gray-600'>
+								<p className='max-w-[300px] font-poppins text-base text-gray-600'>
 									{milestone.content}
 								</p>
 							</div>
@@ -42,7 +42,7 @@ class Milestones extends Component {
 							They treat diseases, move parcels, insure cars, process payments, 
 							create jobs, rent homes and publish news. They are vast and complex 
 							businesses requiring design experiences that are just as {''} 
-							<span className='bg-[#FDF0D8]'>
+							<span className='bg-[#FDF0D8] py-2 px-4'>
 							 people-friendly as they are, <i>robust</i> and <i>scalable</i>
 							</span>.
 						</p>

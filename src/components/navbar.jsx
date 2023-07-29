@@ -50,7 +50,7 @@ class Navbar extends Component {
 
           <div 
             className={`p-10 bg-white absolute right-0 left-0 justify-center flex-col 
-            items-center space-y-10 ${this.state.toggle ? 'flex' : 'hidden'}`}>
+            items-center space-y-10 ${this.state.toggle ? 'flex' : 'hidden'} z-10`}>
             <ul className='flex flex-col justify-center items-center space-y-10'>
               {navLinks.map((link) => (
                 <li key={link.id}
