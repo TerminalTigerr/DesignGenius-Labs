@@ -49,7 +49,6 @@ export const services = [
 		description: 'The essential ability to combine empathy, creativity and rationality to meet user needs and business success.',
 		servicesList: ['Visual Branding', 'Brand Strategy', 'Identity development Digital and print collateral',
 						'Brand guidelines', 'Mockup design'],
-		backgroundColor: 'DEE3FF',
 	},
 	{
 		id: 2,
@@ -58,7 +57,6 @@ export const services = [
 		description: 'Get your custom and exceptional work of UI and UX design for both website and mobile app interface,illustrations, motion graphics all toward your needs.',
 		servicesList: ['Design systems', 'Responsive Website', 'Digital products', 'Motion & interaction', 'illustration',
 						'3D design', 'Graphics design'],
-		backgroundColor: 'FEEFD9',
 	},
 	{
 		id: 3,
@@ -67,7 +65,6 @@ export const services = [
 		description: 'Our expert Front-End Developers are ready to implement the aesthetic of designs into codes adopting the latest framework and technology.',
 		servicesList: ['Front-end development','CMS integrations' ,'SEO friendly' ,'Custom codes'	,
 						'Web maintenance Quality assurance'],
-		backgroundColor: 'FEEAEA'
 	},
 ]
 

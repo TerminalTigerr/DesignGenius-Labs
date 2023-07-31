@@ -4,7 +4,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#041827'
+        primary: '#041827',
+        serviceBlue: '#DEE3FF',
+        serviceYellow: '#FEEFD9',
+        servicePink: '#FEEAEA'
       },
       fontFamily :{
         poppins: ["Poppins", "sans-serif"]

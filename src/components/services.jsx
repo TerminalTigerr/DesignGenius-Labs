@@ -2,7 +2,24 @@ import React, { Component } from 'react';
 import { services } from '../helpers/static-texts';
 
 class Services extends Component {
+	
   render() {
+		let classes =['flex flex-col items-start justify-center space-y-4 p-[32px]']
+
+		{services.forEach((service) => {
+			if(service.id === 1) {
+				classes += `bg-green`			
+			}
+
+			else if(service.id === 2) {
+				if(service.id == 2) {
+					classes += 'bg-red'
+				}
+			}
+			else {
+				classes += 'bg-yellow'
+			}
+		})}
     return (
 			<section id="services" 
 				className='bg-white relative'>
@@ -21,8 +38,7 @@ class Services extends Component {
 					<div className='flex flex-col sm:flex-row justify-center items-center'>
 						<div className='flex flex-col sm:flex-row justify-center items-start'>
 							{services.map((service) => (
-								<div key={service.id} 
-									className={`flex flex-col items-start justify-center space-y-4 p-[32px] bg-[#${service.backgroundColor}]`}>
+								<div key={service.id} className='flex flex-col items-start justify-center space-y-4 p-[32px]'>
 									<img src={service.img} alt='brand' key={service.id}/>
 									<h2 key={service.id}>
 										{service.title}
