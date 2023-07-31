@@ -4,8 +4,8 @@ import { milestones } from '../helpers/static-texts';
 class Milestones extends Component {
   render() {
     return (
-      <section id='milestone' className='relative bg-[#F5F7FC] rounded-b-2xl'>
-				<div className='w-full flex flex-col px-12 py-16 sm:p-32 justify-center items-start  bg-[#F5F7FC] rounded-b-2xl'>
+      <section id='milestones' className='relative bg-white'>
+				<div className='w-full flex flex-col px-12 py-16 sm:p-32 justify-center items-start rounded-b-[5rem] bg-[#F5F7FC]'>
 					<div className='flex flex-col justify-center items-start space-y-5' >
 						<h4 className=' text-sm uppercase text-gray-800 font-poppins font-medium tracking-[7px]'>
 							Milstones

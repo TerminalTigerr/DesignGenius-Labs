@@ -1,3 +1,4 @@
+import { development, brand, eye } from "../assets"
 
 export const navLinks = [
 	{
@@ -38,5 +39,35 @@ export const milestones = [
 		title:'Aquisitions',
 		content:'Number of clients who have been acquired following collaboration with DesignGenius Labs'
 	}
+]
+
+export const services = [
+	{
+		id: 1,
+		img: eye,
+		title: 'Brand Identity',
+		description: 'The essential ability to combine empathy, creativity and rationality to meet user needs and business success.',
+		servicesList: ['Visual Branding', 'Brand Strategy', 'Identity development Digital and print collateral',
+						'Brand guidelines', 'Mockup design'],
+		backgroundColor: 'DEE3FF',
+	},
+	{
+		id: 2,
+		img: brand,
+		title: 'Visual Design',
+		description: 'Get your custom and exceptional work of UI and UX design for both website and mobile app interface,illustrations, motion graphics all toward your needs.',
+		servicesList: ['Design systems', 'Responsive Website', 'Digital products', 'Motion & interaction', 'illustration',
+						'3D design', 'Graphics design'],
+		backgroundColor: 'FEEFD9',
+	},
+	{
+		id: 3,
+		img: development,
+		title: 'Development',
+		description: 'Our expert Front-End Developers are ready to implement the aesthetic of designs into codes adopting the latest framework and technology.',
+		servicesList: ['Front-end development','CMS integrations' ,'SEO friendly' ,'Custom codes'	,
+						'Web maintenance Quality assurance'],
+		backgroundColor: 'FEEAEA'
+	},
 ]
 
