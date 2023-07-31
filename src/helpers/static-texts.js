@@ -47,7 +47,7 @@ export const services = [
 		img: eye,
 		title: 'Brand Identity',
 		description: 'The essential ability to combine empathy, creativity and rationality to meet user needs and business success.',
-		servicesList: ['Visual Branding', 'Brand Strategy', 'Identity development Digital and print collateral',
+		servicesList: ['Visual Branding', 'Brand Strategy', 'Identity development' ,'Digital and print collateral',
 						'Brand guidelines', 'Mockup design'],
 	},
 	{
@@ -64,7 +64,7 @@ export const services = [
 		title: 'Development',
 		description: 'Our expert Front-End Developers are ready to implement the aesthetic of designs into codes adopting the latest framework and technology.',
 		servicesList: ['Front-end development','CMS integrations' ,'SEO friendly' ,'Custom codes'	,
-						'Web maintenance Quality assurance'],
+						'Web maintenance', 'Quality assurance'],
 	},
 ]
 
