@@ -5,6 +5,9 @@ import hero_video from './hero_video.mp4'
 import eye from './eye.svg'
 import brand from './brand.svg'
 import development from './development.svg'
+import phone from './phone.png'
+import laptop from './laptop.png'
+import diabeticBuyBack from './diabeticBuyBack.png'
 
 
 export {
@@ -14,5 +17,8 @@ export {
     hero_video,
     eye,
     brand,
-    development
+    development,
+    laptop,
+    phone,
+    diabeticBuyBack
 }

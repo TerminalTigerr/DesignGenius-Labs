@@ -1,4 +1,4 @@
-import { development, brand, eye } from "../assets"
+import { development, brand, eye, phone, laptop, diabeticBuyBack} from "../assets"
 
 export const navLinks = [
 	{
@@ -68,3 +68,31 @@ export const services = [
 	},
 ]
 
+export const works = [
+	{
+		id: 1,
+		year: 2020,
+		title: "BunnyCDN",
+		content:"BunnyCDN is a fast CDN tool that comes at a fraction of the cost of traditional Content Delivery Networks, it offers features and performance with a fast global network.",
+		from: "Ghana",
+		Timeframe: "Retainer",
+		services: "Website, Illustration",
+		media: {
+			item1: phone,
+			item2: laptop
+		}
+	},
+	{
+		id: 2,
+		year: 2022,
+		title: "Diabetics BuyBack",
+		content: "Get Paid Cash For Your Diabetic Test Strips With Confidence! Help Americans recoup the cost of managing their diabetes by paying them top dollar for their excess supplies.",
+		from: "England",
+		Timeframe: "2 Weeks",
+		services: 'Branding',
+		media:  {
+			item1: diabeticBuyBack
+		}
+
+	}
+]
