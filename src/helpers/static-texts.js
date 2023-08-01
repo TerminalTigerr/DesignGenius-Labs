@@ -76,10 +76,10 @@ export const works = [
 		content:"BunnyCDN is a fast CDN tool that comes at a fraction of the cost of traditional Content Delivery Networks, it offers features and performance with a fast global network.",
 		from: "Ghana",
 		Timeframe: "Retainer",
-		services: "Website, Illustration",
+		services: "Website,",
 		media: {
-			item1: phone,
-			item2: laptop
+			item1: laptop,
+			item2: phone,
 		}
 	},
 	{

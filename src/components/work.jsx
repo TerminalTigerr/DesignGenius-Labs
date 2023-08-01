@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { works } from '../helpers/static-texts';
+import { laptop, phone, diabeticBuyBack } from '../assets';
 
 class Work extends Component {
   render() {
@@ -34,7 +35,7 @@ class Work extends Component {
 					<div className='flex flex-col md:flex-row justify-between items-start 
 						md:mt-[200px] mt-[150px] md:space-x-10 md:space-y-0 space-y-16 space-x-0'>
 					{works.map((work) => (
-						<div key={work.id} className='flex flex-col justify-center items-start w-1/2 space-y-8'>
+						<div key={work.id} className='flex flex-col justify-center items-start md:w-1/2 space-y-8'>
 							<p className='text-sm text-black font-poppins tracking-[7px] font-medium'>
 								{work.year}
 							</p>
@@ -70,13 +71,18 @@ class Work extends Component {
 									</p>
 								</div>
 							</div>
+							<div className='flex flex-col md:flex-row justify-start items-center'>
+								<div className={`relative justify-center items-center py-20 md:h-[670px] rounded-3xl
+									${work.id === 1 ? 'bg-[#E8F5FF]' : ' bg-slate-300'} overflow-hidden`}>
+									<img src={work.media.item1} className={`-left-1 `}/>
+									<img src={work.media.item2}  className='absolute -right-16 top-40 w-[300px] max-w-[450px]'/>
+								</div>
+							</div>
 						</div>
 					))}
 				</div>
 				</div>
-
-				
-       </section>
+      </section>
     );
   }
 }
