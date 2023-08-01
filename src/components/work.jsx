@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { works } from '../helpers/static-texts';
-import { laptop, phone, diabeticBuyBack } from '../assets';
 
 class Work extends Component {
   render() {
