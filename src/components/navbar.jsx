@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {close, logo, menu} from '../assets'
 import { navLinks } from '../helpers/static-texts';
 import Button from './button';
+import BlueButton from './blueButton';
 
 class Navbar extends Component {
   state = {
@@ -59,10 +60,7 @@ class Navbar extends Component {
                 </li>
               ))}
             </ul>
-            <a href='#' className='bg-blue-600 px-8 py-4 rounded-full text-white
-              font-poppins text-base font-medium'>
-              start a project?
-            </a>
+            <BlueButton />
           </div>
         </div>
       </nav>

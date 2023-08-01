@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { brandbassador, bunny, canopees, davehall,demostatck, 
 	diabetics, ethya, grow, helloTax, myshop, ossogas, 
 	payKickstart, paymongo, winclex} from '../assets';
+import BlueButton from './blueButton';
 
 class Testimonials extends Component {
   render() {
@@ -69,6 +70,16 @@ class Testimonials extends Component {
 						<img src={winclex} className='max-w-[200px]'/>
 					</div>
 				</div>
+
+				
+				<div className='flex justify-center items-center py-6 sm:py-16 px-0 sm:px-16'>
+						<div className='flex flex-col justify-center items-center bg-[#041827] py-20 px-12 space-y-[70px] sm:rounded-[2rem]'>
+							<p className='text-white text-[44px] font-poppins font-medium text-center'>
+								Don’t be surprised at how stunning your project is once you have decided
+							</p>
+							<BlueButton />
+						</div>
+					</div>
       </section>
     );
   }

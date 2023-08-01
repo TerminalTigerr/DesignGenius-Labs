@@ -4,6 +4,7 @@ import Milestones from "./milestones";
 import Services from "./services";
 import Work from "./work";
 import Testimonials from "./testimonials";
+import BlueButton from "./blueButton";
 
 export {
     Navbar,
@@ -12,4 +13,5 @@ export {
     Services,
     Work,
     Testimonials,
+    BlueButton
 }
