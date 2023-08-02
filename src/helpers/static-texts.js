@@ -96,3 +96,27 @@ export const works = [
 
 	}
 ]
+
+export const footerLinks = [
+	{
+		
+		id: 1,
+		header: 'navigations',
+		links: ['Home', 'Portfolios', 'Services' , 'Works' , 'Testimonials']
+	},
+	{
+		id: 2,
+		header: 'products',
+		links: ['Iconhub', 'SlabPixel', 'UIPlus', 'UI8']
+	},
+	{
+		id: 3,
+		header: 'socials',
+		links: ['Facebook', 'Dribble', 'Instagram', 'Twitter', 'Behance']
+	},
+	{
+		id: 4,
+		header: 'Company',
+		links: ['Terms & Conditions', 'Privacy', 'Cookies', 'Careers', "Intenships"]
+	}
+]
