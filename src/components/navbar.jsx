@@ -18,7 +18,7 @@ class Navbar extends Component {
     const toggleIcon = this.state.toggle ? close : menu
     return (
       <nav 
-        className='relative flex justify-between items-center mt-5'>
+        className='relative flex justify-between items-center p-4 sm:p-12'>
         <div 
           className='relative flex justify-center items-center space-x-4' >
           <img src={logo} className='w-full h-full'/>

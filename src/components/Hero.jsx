@@ -5,7 +5,7 @@ class Hero extends Component {
   render() {
     return (
       <section id='home' 
-				className='relative flex flex-col sm:px-16 mt-5 sm:mt-12 px-6 bg-primary'>
+				className='relative flex flex-col px-8 sm:px-16 pt-2 sm:pt-8 bg-primary'>
           <div 
 						className='flex flex-col justify-center items-start'>
 						<h1 

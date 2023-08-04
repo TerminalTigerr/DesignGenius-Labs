@@ -5,7 +5,7 @@ class Milestones extends Component {
   render() {
     return (
       <section id='milestones' className='relative bg-white'>
-				<div className='w-full flex flex-col px-12 py-16 sm:p-32 justify-center items-start rounded-b-[5rem] bg-[#F5F7FC]'>
+				<div className='w-full flex flex-col px-12 p-20 sm:p-32  justify-center items-start rounded-b-[5rem] bg-[#F5F7FC]'>
 					<div className='flex flex-col justify-center items-start space-y-5' >
 						<h4 className=' text-sm uppercase text-gray-800 font-poppins font-medium tracking-[7px]'>
 							Milstones
