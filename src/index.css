@@ -5,16 +5,17 @@
 @tailwind utilities;
 
 
-@keyframes slideInFromLeft {
-    from {
-      transform: translateX(-100%);
-    }
-    to {
-      transform: translateX(0);
-    }
+.moving-element {
+  animation: moveLeft 20s linear infinite;
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(50%);
   }
-  
-  .animated-slide-in {
-    animation: slideInFromLeft 0.5s ease-in-out;
+  100% {
+    transform: translateX(-100%);
   }
+}
+
   

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { hero_video } from '../assets';
+import {Fade, Zoom} from 'react-reveal'
 
 class Hero extends Component {
   render() {
@@ -20,10 +21,14 @@ class Hero extends Component {
 					</div>
 
 					<div className=' sm:mt-40 mt-20 sm:mb-40 mb-20'>
-						<video id='hero' autoPlay loop className=' rounded-3xl'>
-							<source src={hero_video}>
-							</source>
-						</video>
+						<Zoom 
+							bottom
+						>
+							<video id='hero' autoPlay loop className=' rounded-3xl'>
+								<source src={hero_video}>
+								</source>
+							</video>
+						</Zoom>
 					</div>
 
 					<div className='absolute bottom-0 left-0 right-0 bg-slate-40 z-20'/>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {Navbar, Hero, Milestones, Services, Work, Testimonials, Footer} from './components';
 
+
 class App extends Component {
   render() {
     return (

@@ -3,6 +3,8 @@ import { brandbassador, bunny, canopees, davehall,demostatck,
 	diabetics, ethya, grow, helloTax, myshop, ossogas, 
 	payKickstart, paymongo, winclex} from '../assets';
 import BlueButton from './blueButton';
+import { Slide } from 'react-reveal';
+
 
 class Testimonials extends Component {
   render() {
@@ -53,21 +55,25 @@ class Testimonials extends Component {
 								</div>
 						</div>
 					</div>
-					<div className='flex flex-row justify-between items-center overflow-hidden py-20 space-x-6'>
-						<img src={brandbassador} className='max-w-[200px]'/>
-						<img src={bunny} className='max-w-[200px]'/>
-						<img src={canopees} className='max-w-[200px]'/>
-						<img src={davehall} className='max-w-[200px]'/>
-						<img src={demostatck} className='max-w-[200px]'/>
-						<img src={diabetics} className='max-w-[200px]'/>
-						<img src={ethya} className='max-w-[200px]'/>
-						<img src={grow} className='max-w-[200px]'/>
-						<img src={helloTax} className='max-w-[200px]'/>
-						<img src={myshop} className='max-w-[200px]'/>
-						<img src={ossogas} className='max-w-[200px]'/>
-						<img src={payKickstart} className='max-w-[200px]'/>
-						<img src={paymongo} className='max-w-[200px]'/>
-						<img src={winclex} className='max-w-[200px]'/>
+					<div className='moving-element flex flex-row justify-between items-center overflow-hidden py-20 space-x-6'>
+						<Slide 
+							left
+						>
+							<img src={brandbassador} className='max-w-[200px]'/>
+							<img src={bunny} className='max-w-[200px]'/>
+							<img src={canopees} className='max-w-[200px]'/>
+							<img src={davehall} className='max-w-[200px]'/>
+							<img src={demostatck} className='max-w-[200px]'/>
+							<img src={diabetics} className='max-w-[200px]'/>
+							<img src={ethya} className='max-w-[200px]'/>
+							<img src={grow} className='max-w-[200px]'/>
+							<img src={helloTax} className='max-w-[200px]'/>
+							<img src={myshop} className='max-w-[200px]'/>
+							<img src={ossogas} className='max-w-[200px]'/>
+							<img src={payKickstart} className='max-w-[200px]'/>
+							<img src={paymongo} className='max-w-[200px]'/>
+							<img src={winclex} className='max-w-[200px]'/>
+						</Slide>
 					</div>
 				</div>
 

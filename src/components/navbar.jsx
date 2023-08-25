@@ -3,16 +3,25 @@ import {close, logo, menu} from '../assets'
 import { navLinks } from '../helpers/static-texts';
 import Button from './button';
 import BlueButton from './blueButton';
+import { Link } from 'react-scroll';
 
 class Navbar extends Component {
   state = {
-    toggle: false
+    toggle: false,
+    isHovered: false
   }
   handleMenuToggle = () => {
     this.setState((prev) => ({
       toggle: !prev.toggle
     }))
-  } 
+  }
+  
+  handleMouseHover = () => {
+    this.setState({isHovered: True})
+  }
+  handleMouseLeave = () => {
+    this.setState({isHovered: false})
+  }
  
   render() {
     const toggleIcon = this.state.toggle ? close : menu
@@ -32,13 +41,23 @@ class Navbar extends Component {
         <div className='justify-end items-center w-[70%] hidden md:flex'>
           <ul className='flex list-none justify-start items-center mr-10 space-x-8'>
             {navLinks.map((link) => (
-              <li key={link.id}
-                className='font-poppins text-base text-white font-semibold'>
-                <a href={`#${link.id}`}>{link.title}</a>
-              </li>
+              <Link 
+                activeClass='active'
+                to={link.id}
+                spy={true}
+                smooth={true}
+                offset={20}
+                duration={500}
+              >
+                <li key={link.id}
+                  className='font-poppins text-base text-white font-semibold'>
+                  <a href={`#${link.id}`}>{link.title}</a>
+                </li>
+              </Link>
             ))}
           </ul>
-          <Button />
+          <Button 
+          />
         </div>
         
         {/**============= Hamburger Menu ========= */}

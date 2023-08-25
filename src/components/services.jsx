@@ -7,7 +7,7 @@ class Services extends Component {
     return (
 			<section id="services" 
 				className='bg-white relative'>
-        <div className='flex flex-col justify-center items-start px-6 py-20 sm:py-32 sm:px-16'>
+        <div className='flex flex-col justify-center items-start px-6 py-20 sm:py-40 sm:px-16'>
 					<div className='flex flex-col justify-center items-start space-y-5 mb-[100px]' >
 						<p className=' text-sm uppercase text-gray-800 font-poppins font-medium tracking-[7px]'>
 							Services

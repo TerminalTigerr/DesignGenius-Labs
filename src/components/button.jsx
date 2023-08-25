@@ -8,19 +8,19 @@ class Button extends Component {
 				justify-center items-center font-medium text-gray-800 hover:scale-[1.02] transition 
 				duration-300 ease-out overflow-hidden group'
 				
+				
 			>
-				<span 
+				{/*<span 
 					className='absolute items-center justify-center w-full h-full text-white duration-300
-					-translate-x-full group-hover:translate-x-0 ease' 
+					translate-x-full group-hover:translate-x-0 ease' 
 				>
 					Send Inquiry!
-				</span>
+				</span> */}
 				<span
-					className='absolute flex items-center justify-center w-full h-full transition-all duration-300
-					transform group-hover:translate-x-full ease' 
+					className='absolute flex items-center justify-center w-full h-full transition-all ' 
 				>
 					Start a Project?
-				</span>
+				</span> 
 			</a>
     );
   }
